@@ -44,6 +44,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-transformer-yaml`,
+    // `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        typeName: ({ node, object, isArray }) => object.level,
+      },
+    },
   ]
 }

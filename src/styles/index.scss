@@ -45,6 +45,45 @@ p.img__description {
   position: absolute;
   top: 40%;
   bottom: 40%;
+  left: 10%;
+  right: 10%;
+  // background: rgba(29, 106, 154, 0.72);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  // transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+.img__wrap:hover .img__description__name img:hover {
+  // opacity: 0;
+  visibility: visible;
+  // color: blue;
+}
+
+p.img__description__name {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.img__wrap {
+  text-align: center;
+  position: relative;
+  color: white;
+  max-width: 400px;
+}
+
+.img__description__name {
+  text-align: center;
+  position: absolute;
+  top: 33%;
+  bottom: 33%;
   left: 0;
   right: 0;
   // background: rgba(29, 106, 154, 0.72);
@@ -56,7 +95,7 @@ p.img__description {
   // transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap:hover .img__description {
+.img__wrap:hover .img__description__name {
   visibility: visible;
   opacity: 1;
 }

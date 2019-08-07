@@ -1,0 +1,9 @@
+- image: tigerride.jpg
+  name: tigerride
+  description: a student run web-app created to allow students to organize for transportation to and from airports.
+- image: surfrider.jpg
+  name: surfrider rincon
+  description: a site that quantitatively tracks QR code metrics for the rincon chapter of the surfrider organization.
+- image: v1.jpg
+  name: first iteration of my site!
+  description: a static site created with the gatsby and react frameworks.

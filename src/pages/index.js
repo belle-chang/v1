@@ -8,7 +8,7 @@ import "../styles/index.scss"
 
 function IndexPage( { data } ) {
     console.log("hi")
-    console.log(data.allTestsYaml)
+    console.log(data.allTilesYaml)
     return (
         <Layout>
             <Helmet>
@@ -21,10 +21,11 @@ function IndexPage( { data } ) {
                 <img className="img__img" src={'tigerride.jpg'} alt="hi"/>
             </div> */}
         
-            {data.allTestsYaml.edges.map(({ node }) => 
+            {data.allTilesYaml.edges.map(({ node }) => 
             (
                 <div class="img__wrap">
-                    <p className="img__description">{node.name}</p>
+                    <h3 className="img__description__name">{node.name}</h3><br/>
+                    <p className="img__description">{node.description}</p>
                     <img className="img__img" src={node.image} alt={node.name}/>
                 </div> 
             ))}
@@ -57,11 +58,12 @@ function IndexPage( { data } ) {
 
 export const query = graphql`
     query {
-        allTestsYaml {
+        allTilesYaml {
             edges {
                 node {
                     image
                     name
+                    description
                 }
             }
         }
