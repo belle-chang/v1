@@ -3,12 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import "../styles/index.scss"
 
 function IndexPage( { data } ) {
     console.log("hi")
-    console.log(data.allTilesYaml)
+    console.log(data.allMarkdownRemark)
     return (
         <Layout>
             <Helmet>
@@ -16,17 +16,13 @@ function IndexPage( { data } ) {
                 <title>home</title>
             </Helmet>
             <h1>My projects!</h1>
-            {/* /* <div class="img__wrap">
-                <p className="img__description">hi testing 123</p>
-                <img className="img__img" src={'tigerride.jpg'} alt="hi"/>
-            </div> */}
         
-            {data.allTilesYaml.edges.map(({ node }) => 
+            {data.allMarkdownRemark.edges.map(({ node }) => 
             (
-                <div class="img__wrap">
-                    <h3 className="img__description__name">{node.name}</h3><br/>
-                    <p className="img__description">{node.description}</p>
-                    <img className="img__img" src={node.image} alt={node.name}/>
+                <div className="img__wrap">
+                    <h3 className="img__description__name">{node.frontmatter.tile}</h3><br/>
+                    <p className="img__description">{node.frontmatter.description}</p>
+                    <img className="img__img" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.id}/>
                 </div> 
             ))}
             
@@ -54,21 +50,37 @@ function IndexPage( { data } ) {
         </Layout>
     )
 }
-
-
 export const query = graphql`
     query {
-        allTilesYaml {
+        allMarkdownRemark {
             edges {
                 node {
-                    image
-                    name
-                    description
+                    frontmatter {
+                        title
+                        date
+                        image
+                        tile
+                        description
+                    }
                 }
             }
         }
     }
 `
+
+// export const query = graphql`
+//     query {
+//         allTilesYaml {
+//             edges {
+//                 node {
+//                     image
+//                     name
+//                     description
+//                 }
+//             }
+//         }
+//     }
+// `
 
 // export const query = graphql`
 //     query {
