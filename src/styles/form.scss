@@ -1,0 +1,32 @@
+input[type=text], input[type=email] {
+    width: 75%;
+    padding: 7px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 75%;
+    height: 150px;
+    padding: 7px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 100px;
+    background-color:  #e0e0e0;
+    border-color: #e0e0e0;
+    border-radius: 4px;
+    color: black;
+    border-style: solid;
+}
+
+button[type=submit]:hover {
+    width: 100px;
+    background-color:  #d0ffd2;
+    color:black;
+    border-color: #d0ffd2;
+    border-radius: 4px;
+    border-style: solid;
+}

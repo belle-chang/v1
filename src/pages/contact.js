@@ -1,7 +1,9 @@
 import React from "react"
 import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
+import formStyles from "../styles/form.scss"
 import { Helmet } from "react-helmet"
+
 
 function encode(data) {
     return Object.keys(data)
@@ -59,21 +61,21 @@ function Contact() {
             <label>
               Your name:
               <br />
-              <input type="text" name="name" onChange={handleChange} />
+              <input type="text" name="name" required="true" onChange={handleChange} />
             </label>
           </p>
           <p>
             <label>
               Your email:
               <br />
-              <input type="email" name="email" onChange={handleChange} />
+              <input type="email" name="email" required="true"  onChange={handleChange} />
             </label>
           </p>
           <p>
             <label>
               Message:
               <br />
-              <textarea name="message" onChange={handleChange} />
+              <textarea name="message" required="true" onChange={handleChange} />
             </label>
           </p>
           <p>
