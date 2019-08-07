@@ -10,7 +10,27 @@ function Contact() {
                 <title>contact me</title>
             </Helmet>
             <h1>Contact me below!</h1>
-            <p>the goal is to make a mail form.</p>
+            <form 
+                name="contact_me"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+            >
+                <label for="name">Your name:**</label>
+                <br />
+                <input name="name" type="text" required="true" />
+                <br />
+                <label for="email">Your email:**</label>
+                <br />
+                <input name="email" type="text" required="true" />
+                <br />
+                <label for="message">Your message:**</label>
+                <br />
+                <input name="message" type="textarea" required="true" />
+                <br />
+                <button>Send!</button>
+
+            </form>
         </Layout>
     )
 }

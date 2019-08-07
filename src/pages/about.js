@@ -11,7 +11,7 @@ function About() {
                 <title>about</title>
             </Helmet>
             <h1>Hi,</h1>
-            <h2 style={{lineHeight: `40px`}}>I'm Anabelle, a rising junior at Princeton University majoring in Computer Science! 
+            <h2 style={{lineHeight: `40px`}}>I'm Anabelle, a rising junior at Princeton University majoring in Computer Science. 
                 I also play for <a href="https://goprincetontigers.com/index.aspx?path=wgolf" style={{textDecoration: `none`, color: `#ed6700`}}>Princeton Women's Golf</a>.
             </h2>
             <p>My passions include experimenting with new recipes, perusing <a href="https://www.theverge.com/this-is-my-next/2018/10/5/17927798/best-music-streaming-service-price-comparison-features">Spotify</a> for new hits, and volunteering at my local shelter.</p>

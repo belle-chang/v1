@@ -66,7 +66,12 @@ a.icon_left {
 li a.name:hover:not(.active) {
     color:#dba8ff;
 }
-  
+
+// li a:hover li a:active{
+//     // background-color: #555;
+//     color: black;
+// }
+
 li a:hover:not(.active) {
     // background-color: #555;
     color: black;

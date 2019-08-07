@@ -25,11 +25,13 @@ function NavBar() {
             <li ><Link to="/contact" className={navBarStyles.reg}>contact me</Link></li>
             <li>
                 <a href="https://github.com/belle-chang"
+                    target="_blank"
                     className={navBarStyles.reg}
                     style={{fontSize: `25px`}}>
                         <FontAwesomeIcon icon={faGithub}/>
                 </a>
-                <a href="/"
+                <a href="https://www.linkedin.com/in/anabelle-chang-620362102"
+                    target="_blank"
                     className={navBarStyles.reg}
                     style={{fontSize: `25px`}}>
                         <FontAwesomeIcon icon={faLinkedin}/>
