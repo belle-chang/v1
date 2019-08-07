@@ -31,6 +31,34 @@ li a.reg {
     text-align:center;
 }
 
+// .icons {
+//     display: inline-block;
+//     color:  #9a979c;
+//     padding: 8px 8px;
+//     text-decoration: none;
+//     text-align:center;
+// }
+
+a.icons {
+    display: inline-block;    
+    color:  #9a979c;
+    padding: 8px 8px;
+    text-decoration: none;
+    text-align:center;
+}
+a.icon_left {
+    display: inline-block;    
+    color:  #9a979c;
+    padding: 8px 8px;
+    text-decoration: none;
+    text-align:center;
+    margin-left: 38%;
+}
+// .icons:hover:not(.active) {
+//     // background-color: #555;
+//     color: black;
+// }
+
 // li a.active {
 //     background-color: #4CAF50;
 //     color: white;
