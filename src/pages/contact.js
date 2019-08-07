@@ -3,6 +3,12 @@ import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
+  
 function Contact() {
     const [state, setState] = React.useState({})
   
