@@ -28,7 +28,7 @@ function Contact() {
                 <br />
                 <input name="message" type="textarea" required="true" />
                 <br />
-                <button>Send!</button>
+                <button type="submit">Send!</button>
 
             </form>
         </Layout>
