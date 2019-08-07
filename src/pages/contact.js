@@ -1,19 +1,18 @@
 import React from "react"
-// import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 
-function IndexPage() {
+function Contact() {
     return (
         <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>home</title>
+                <title>contact me</title>
             </Helmet>
-            <h1>this is the index page.</h1>
-            
+            <h1>Contact me below!</h1>
+            <p>the goal is to make a mail form.</p>
         </Layout>
     )
 }
 
-export default IndexPage
+export default Contact
