@@ -10,7 +10,7 @@ function Error() {
                 <meta charSet="utf-8" />
                 <title>404 page not found</title>
             </Helmet>
-            <h1>404</h1>
+            <h1>404 page not found :/</h1>
         </Layout>
     )
 }

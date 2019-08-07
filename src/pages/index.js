@@ -15,7 +15,7 @@ function IndexPage( { data } ) {
                 <meta charSet="utf-8" />
                 <title>home</title>
             </Helmet>
-            {/* <h1>this is the index page.</h1> */}
+            <h1>My projects!</h1>
             {/* /* <div class="img__wrap">
                 <p className="img__description">hi testing 123</p>
                 <img className="img__img" src={'tigerride.jpg'} alt="hi"/>
