@@ -19,5 +19,31 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-sharp`,
+    //   options: {
+    //     useMozJpeg: false,
+    //     stripMetadata: true,
+    //     defaultQuality: 75,
+    //   },
+    // },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-yaml`,
   ]
 }
