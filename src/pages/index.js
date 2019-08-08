@@ -54,7 +54,12 @@ function IndexPage( { data } ) {
 }
 export const query = graphql`
     query {
-        allMarkdownRemark {
+        allMarkdownRemark (
+            sort: {
+                fields: [frontmatter___key]
+                order: ASC
+              }
+        ) {
             edges {
                 node {
                     frontmatter {
@@ -63,6 +68,7 @@ export const query = graphql`
                         image
                         tile
                         description
+                        key
                     }
                     fields {
                         slug
