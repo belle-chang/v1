@@ -8,7 +8,7 @@ import "../styles/index.scss"
 
 function IndexPage( { data } ) {
     // console.log("hi")
-    // console.log(data.allMarkdownRemark)
+    console.log(data.allMarkdownRemark)
     return (
         <Layout>
             <Helmet>
@@ -43,10 +43,7 @@ function IndexPage( { data } ) {
                         </div>
                     </div>
                 </div>
-                </Link>
-
-
-                
+                </Link>                
             ))}
 
             {/* <Img
@@ -54,21 +51,9 @@ function IndexPage( { data } ) {
                 fluid={data.file.childImageSharp.fluid}
                 alt=""
             /> */}
-            {/* <ol style={{listStyleType: `none`}}> */}
-                {/* <li>
-                    {data.allPhotosYaml.edges.map(({ node }) => (
-                        <div>
-                            <p>{node.image.name}</p>
-                            <Img 
-                                fluid={node.image.childImageSharp.fluid} 
-                                alt={node.alt} 
-                            />
-                            <br />
-                        </div>
-                        
-                    ))}
-                </li> */}
-            {/* </ol> */}
+            <br />
+            <br />
+
         </Layout>
     )
 }

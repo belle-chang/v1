@@ -3,7 +3,7 @@ title: "TigerRide"
 date: "March 2019-present"
 image: "tigerride.jpg"
 tile: "tigerride"
-description: "a site that quantitatively tracks QR code metrics for the rincon chapter of the surfrider organization."
+description: "a student run web-app created to allow students to organize for transportation to and from airports."
 key: "1"
 ---
 
