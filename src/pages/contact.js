@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
-import formStyles from "../styles/form.scss"
+import "../styles/form.scss"
 import { Helmet } from "react-helmet"
 
 

@@ -16,18 +16,38 @@ function IndexPage( { data } ) {
                 <title>home</title>
             </Helmet>
             <h1>My projects!</h1>
-        
-            {data.allMarkdownRemark.edges.map(({ node }) => 
+            {/* {data.allMarkdownRemark.edges.map(({ node }) => 
             (
                 <div className="img__wrap">
                     <Link to={`/projects/${node.fields.slug}`}>
-                        <h3 className="img__description__name">{node.frontmatter.tile}</h3><br/>
+                    <h3 className="img__description__name">{node.frontmatter.tile}</h3><br/>
                         <p className="img__description">{node.frontmatter.description}</p>
                         <img className="img__img" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.id}/>
+                        
                     </Link>
+                    
                 </div> 
-            ))}
+            ))} */}
             
+            {data.allMarkdownRemark.edges.map(({ node }) => 
+            (
+                <Link to={`/projects/${node.fields.slug}`}>
+
+                <div className="container">
+                        <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.id}/>
+
+                    <div className="overlay">
+                        <div className="text">
+                        <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+                        {node.frontmatter.description}
+                        </div>
+                    </div>
+                </div>
+                </Link>
+
+
+                
+            ))}
 
             {/* <Img
                 className="headshot"
