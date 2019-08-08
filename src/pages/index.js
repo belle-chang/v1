@@ -2,13 +2,13 @@ import React from "react"
 // import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 // import Img from "gatsby-image"
 import "../styles/index.scss"
 
 function IndexPage( { data } ) {
-    console.log("hi")
-    console.log(data.allMarkdownRemark)
+    // console.log("hi")
+    // console.log(data.allMarkdownRemark)
     return (
         <Layout>
             <Helmet>
@@ -20,9 +20,11 @@ function IndexPage( { data } ) {
             {data.allMarkdownRemark.edges.map(({ node }) => 
             (
                 <div className="img__wrap">
-                    <h3 className="img__description__name">{node.frontmatter.tile}</h3><br/>
-                    <p className="img__description">{node.frontmatter.description}</p>
-                    <img className="img__img" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.id}/>
+                    <Link to={`/projects/${node.fields.slug}`}>
+                        <h3 className="img__description__name">{node.frontmatter.tile}</h3><br/>
+                        <p className="img__description">{node.frontmatter.description}</p>
+                        <img className="img__img" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.id}/>
+                    </Link>
                 </div> 
             ))}
             
@@ -61,6 +63,9 @@ export const query = graphql`
                         image
                         tile
                         description
+                    }
+                    fields {
+                        slug
                     }
                 }
             }
