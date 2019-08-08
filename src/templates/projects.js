@@ -1,5 +1,5 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from "react"
+import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 export const query = graphql`
