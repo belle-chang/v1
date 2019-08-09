@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
+import "../styles/all.scss"
 
 
 function About() {
@@ -15,7 +16,7 @@ function About() {
                 I also play for <a href="https://goprincetontigers.com/index.aspx?path=wgolf" style={{textDecoration: `underline`, color: `#ed6700`}}>Princeton Women's Golf</a>.
             </h2>
             <p>YADDA YADDA YADDA. add more stuff. 
-                My passions include experimenting with new recipes, perusing <a href="https://www.theverge.com/this-is-my-next/2018/10/5/17927798/best-music-streaming-service-price-comparison-features">Spotify</a> for the latest new hits, and _____.</p>
+                My passions include experimenting with new recipes, perusing <a className="link" href="https://www.theverge.com/this-is-my-next/2018/10/5/17927798/best-music-streaming-service-price-comparison-features">Spotify</a> for the latest new hits, and _____.</p>
             <div style={{textDecoration: `underline`}}>Relevant Coursework:</div>
             <p >General Computer Science, Algorithms and Data Structures, Introduction to Programming Systems, Reasoning About Computation, Advanced Programming Techniques, Economics and Computation</p>
             {/* <ul>

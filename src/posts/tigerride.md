@@ -13,6 +13,3 @@ You can visit it [here](http://tigerride.herokuapp.com).
 
 
 __**Technical Skills/Technologies Used:**__ Django, PostGres, Python, Heroku
-
-
-hello my name is anabelle

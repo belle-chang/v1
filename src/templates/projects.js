@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import '../styles/all.scss'
+
 export const query = graphql`
 query ($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
@@ -20,7 +22,11 @@ query ($slug: String!) {
 
 function Projects(props) {
     console.log("hyi")
-    console.log(props.data)
+    let str = props.data.markdownRemark.html
+    // let new_str = str.replace("<a", "<a style={{color: `black`, text-decoration: `none`, border-bottom: `1px dotted black`,}} className='link'");
+    // console.log(str)
+    // console.log(new_str)
+
 
     return (
         <Layout>
@@ -28,11 +34,19 @@ function Projects(props) {
                 <meta charSet="utf-8" />
                 <title>{props.data.markdownRemark.frontmatter.tile}</title>
             </Helmet>
-            
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.date}</p>
+            <div style={{display:`inline`}}>
+              <h1 style={{display:`inline`}}>
+                  {props.data.markdownRemark.frontmatter.title}    </h1>
+              <p style={{display:`inline`, 
+                          fontSize: `17px`, 
+                          color: `#555555`}}>
+                  {props.data.markdownRemark.frontmatter.date}
+              </p>
+            </div>
+            <br />
+            <br />
             <div dangerouslySetInnerHTML={{
-                __html: props.data.markdownRemark.html
+                __html: str
             }}></div>
         </Layout>
     )
