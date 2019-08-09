@@ -2,6 +2,38 @@ body {
     margin: 0;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    bottom: 100%;
+    right:40%;
+    left: 50%;
+    margin-left: -30px;
+    // left: 42%;
+    // right: 42%;
+
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #dba8fff6;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 ul {
     list-style-type: none;
@@ -13,7 +45,6 @@ ul {
     height: 100%;
     overflow: auto;
 }
-
   
 li a.name {
     font-size: 23px;
@@ -29,6 +60,7 @@ li a.reg {
     padding: 8px 16px;
     text-decoration: none;
     text-align:center;
+    justify-content: center;
 }
 
 // .icons {
