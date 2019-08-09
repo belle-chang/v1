@@ -29,7 +29,6 @@ function IndexPage( { data } ) {
                 <meta charSet="utf-8" />
                 <title>home</title>
             </Helmet>
-            <h1>My projects!</h1>
             {/* {data.allMarkdownRemark.edges.map(({ node }) => 
             (
                 <div className="img__wrap">
