@@ -52,8 +52,8 @@ function IndexPage( { data } ) {
 
                                 <div className="overlay">
                                     <div className="text">
-                                    <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
-                                    {node.frontmatter.description}
+                                    <div style={{fontSize: `1.9vw`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+                                    <div style={{fontSize: `1.3vw`}}>{node.frontmatter.description}</div>
                                     </div>
                                 </div>
                             </div>
@@ -70,8 +70,8 @@ function IndexPage( { data } ) {
 
                                 <div className="overlay">
                                     <div className="text">
-                                    <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
-                                    {node.frontmatter.description}
+                                    <div className="tile-head" style={{fontSize: `1.9vw`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+                                    <div style={{fontSize: `1.3vw`}}>{node.frontmatter.description}</div>
                                     </div>
                                 </div>
                             </div>
