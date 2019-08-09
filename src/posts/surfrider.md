@@ -7,4 +7,6 @@ description: "a site that quantitatively tracks QR code metrics for the rincon c
 key: "2"
 ---
 
+__**Technical Skills/Technologies Used:**__ Django, PostGres, Python, Heroku
+
 STEVEEEEY
