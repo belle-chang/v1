@@ -5,7 +5,7 @@ import layoutStyles from "./layout.module.scss"
 
 function Layout(props) {
     return (
-        <div>
+        <div className={layoutStyles.all}>
             <NavBar />
             <div className={layoutStyles.body}>
                 <br />

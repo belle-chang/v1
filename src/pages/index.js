@@ -8,7 +8,21 @@ import "../styles/index.scss"
 
 function IndexPage( { data } ) {
     // console.log("hi")
-    console.log(data.allMarkdownRemark)
+    // console.log(data.allMarkdownRemark)
+    // console.log(Object.keys(data.allMarkdownRemark.edges).length);
+    let length = Object.keys(data.allMarkdownRemark.edges).length
+    if (length % 2 == 1) length = length + 1
+    let col1 = data.allMarkdownRemark.edges.filter(({ node }) =>  {
+        if (node.frontmatter.key <= length/2) {
+            return node
+        }
+    })
+    let col2 = data.allMarkdownRemark.edges.filter(({ node }) =>  {
+        if (node.frontmatter.key > length/2) {
+            return node
+        }
+    })
+
     return (
         <Layout>
             <Helmet>
@@ -28,8 +42,86 @@ function IndexPage( { data } ) {
                     
                 </div> 
             ))} */}
+
+            <div class="row"> 
+                    <div class="column">
+                        {col1.map(({ node }) => 
+                        (
+                            <Link to={`/projects/${node.fields.slug}`}>
+                            <div className="container">
+                                    <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+
+                                <div className="overlay">
+                                    <div className="text">
+                                    <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+                                    {node.frontmatter.description}
+                                    </div>
+                                </div>
+                            </div>
+                            </Link>                
+                        ))}
+                    </div>
+                    <div class="column">
+                        {col2.map(({ node }) => 
+                        (
+                            <Link to={`/projects/${node.fields.slug}`}>
+
+                            <div className="container">
+                                    <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+
+                                <div className="overlay">
+                                    <div className="text">
+                                    <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+                                    {node.frontmatter.description}
+                                    </div>
+                                </div>
+                            </div>
+                            </Link>                
+                        ))}
+                    </div>
+                </div>
             
-            {data.allMarkdownRemark.edges.map(({ node }) => 
+            {length >= 6 &&
+                <div class="row"> 
+                    <div class="column">
+                        
+                    {data.allMarkdownRemark.edges.map(({ node }) => 
+                    (
+                        <Link to={`/projects/${node.fields.slug}`}>
+
+                        <div className="container">
+                                <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+
+                            <div className="overlay">
+                                <div className="text">
+                                <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+                                {node.frontmatter.description}
+                                </div>
+                            </div>
+                        </div>
+                        </Link>                
+                    ))}
+                        {/* <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                        <img src={`test.jpg`}style={{width:`100%`}}/>
+                        <img src={`test1.jpg`} style={{width:`100%`}}/>
+                        <img src={`surfrider.jpg`} style={{width:`100%`}}/>
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/> */}
+                    </div>
+                    <div class="column">
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                        <img src={`test.jpg`}style={{width:`100%`}}/>
+                        <img src={`test1.jpg`} style={{width:`100%`}}/>
+                        <img src={`surfrider.jpg`} style={{width:`100%`}}/>
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+                    </div>
+                </div>
+            }
+            
+            {/* {data.allMarkdownRemark.edges.map(({ node }) => 
             (
                 <Link to={`/projects/${node.fields.slug}`}>
 
@@ -44,7 +136,9 @@ function IndexPage( { data } ) {
                     </div>
                 </div>
                 </Link>                
-            ))}
+            ))} */}
+
+        
 
             {/* <Img
                 className="headshot"
