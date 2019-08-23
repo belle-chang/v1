@@ -23,9 +23,9 @@ query ($slug: String!) {
 function Projects(props) {
     console.log("hyi")
     let str = props.data.markdownRemark.html
-    // let new_str = str.replace("<a", "<a style={{color: `black`, text-decoration: `none`, border-bottom: `1px dotted black`,}} className='link'");
+    let new_str = str.replace("<a", "<a style={{color: `black`, text-decoration: `none`, border-bottom: `1px dotted black`,}} className='link'");
     // console.log(str)
-    // console.log(new_str)
+    console.log(new_str)
 
 
     return (
@@ -46,7 +46,7 @@ function Projects(props) {
             <br />
             <br />
             <div dangerouslySetInnerHTML={{
-                __html: str
+                __html: new_str
             }}></div>
         </Layout>
     )
