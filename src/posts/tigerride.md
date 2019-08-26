@@ -9,7 +9,7 @@ key: "1"
 
 __**Technical Skills/Technologies Used:**__ Django, PostGres, Python, Heroku
 
-In Spring 2019, I took a class COS333: Advanced Programming Techniques, during which I created a web application with a few others that would allow for students to organize sharing Uber, Lyft, or other transportation services to and from the Princeton University campus. I was mostly in charge of the back-end development, but I also dabbled a bit in databases using PostGres.
+In Spring 2019, I took a class COS333: Advanced Programming Techniques, during which I, along with a few others, created a web application that would allow for students to organize sharing Uber, Lyft, or other transportation services to and from the Princeton University campus. I was mostly in charge of the back-end development, but I also dabbled a bit in databases using PostGres.
 
 ![welcome](../tigerride/tigerride.jpg)
 
@@ -26,7 +26,7 @@ Joining groups was done by having unique identification numbers for each planned
 We also included a page where each student could view his/her ride history, which included past and present rides:
 
 
-This was useful because if upon the first search the student did not have any matches, the student could revisit the search results for his planned trip later on. To add this functionality, I was able to embed the ride identification number 
+This was useful because if upon the first search the student did not have any matches, the student could revisit the search results for his planned trip later on in the "current rides" section. To add this functionality, I embedded the ride identification number into the button, therefore allowing for easy access and manipulation of the trip/model's data. 
 
 Because our app was web-based, I decided to incorporate email notifications whenever a rider joined or left a group. This way, all members of the group could get in touch with one another and be kept up to date with the number of members in their group.
 <!-- 
