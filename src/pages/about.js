@@ -31,6 +31,7 @@ function About() {
                 <br/>
                 <br/>
             </p>
+            
             <div style={{textDecoration: `underline`,fontWeight: `700`}}>Here are a few technologies I've been working with recently:</div>
             <p>Java, Python, Django, React, PostGres, HTML & CSS</p>
             
