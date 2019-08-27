@@ -19,7 +19,7 @@ function NavBar() {
             <ul>
             <br />
             <br />
-            <li ><Link to="/" className={navBarStyles.name}>anabelle chang</Link></li>
+            <li ><Link to="/" className={navBarStyles.name}>ANABELLE CHANG</Link></li>
             {/* <li style={{ fontSize: `23px`}}><Link to="/">anabelle chang</Link></li> */}
             <li ><Link to="/about" className={navBarStyles.reg}>about</Link></li>
             <li ><Link to="/contact" className={navBarStyles.reg}>contact me</Link></li>

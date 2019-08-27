@@ -19,6 +19,15 @@ const typography = new Typography({
         '700',
       ],
     },
+    {
+      name: 'Overpass Mono',
+      styles: [
+        '300',
+        '400',
+        '600',
+        '700',
+      ]
+    }
   ],
   headerFontFamily: [
     'Karla', 'sans-serif',
