@@ -3,6 +3,8 @@ import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
 import "../styles/form.scss"
 import { Helmet } from "react-helmet"
+import favicon from "../../static/favicon.ico"
+
 
 
 function encode(data) {
@@ -38,6 +40,7 @@ function Contact() {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>CONTACT</title>
+                <link rel="icon" href={favicon} />
             </Helmet>
             <h1>Contact me below!</h1>
 

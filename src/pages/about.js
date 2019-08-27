@@ -12,6 +12,7 @@ function About() {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>ABOUT</title>
+                <link rel="icon" href={favicon} />
                 
             </Helmet>
             <h1>Hi,</h1>

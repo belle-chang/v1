@@ -10,6 +10,7 @@ export default function Thanks() {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>THANK YOU!</title>
+                <link rel="icon" href={favicon} />
                 
             </Helmet>
             <h1>Thanks for reaching out!</h1>
