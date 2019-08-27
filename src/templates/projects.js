@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import '../styles/all.scss'
+import favicon from "../../static/favicon.ico"
+
 
 export const query = graphql`
 query ($slug: String!) {

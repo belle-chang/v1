@@ -5,6 +5,8 @@ import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 // import Img from "gatsby-image"
 import "../styles/index.scss"
+import favicon from "../../static/favicon.ico"
+
 
 function IndexPage( { data } ) {
     // console.log("hi")
@@ -29,7 +31,8 @@ function IndexPage( { data } ) {
         <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>home</title>
+                <title>ANABELLE CHANG</title>
+                <link rel="icon" href={favicon} />
             </Helmet>
             {/* {data.allMarkdownRemark.edges.map(({ node }) => 
             (

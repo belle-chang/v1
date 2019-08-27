@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
+import favicon from "../../static/favicon.ico"
 
 
 export default function Thanks() {
@@ -8,7 +9,8 @@ export default function Thanks() {
         <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>thank you!</title>
+                <title>THANK YOU!</title>
+                
             </Helmet>
             <h1>Thanks for reaching out!</h1>
         </Layout>

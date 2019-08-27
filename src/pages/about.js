@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import "../styles/all.scss"
 import { Link } from "gatsby";
+import favicon from "../../static/favicon.ico"
 
 
 function About() {
@@ -10,7 +11,8 @@ function About() {
         <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>about</title>
+                <title>ABOUT</title>
+                
             </Helmet>
             <h1>Hi,</h1>
             <h2 style={{lineHeight: `40px`}}>I'm Anabelle, a rising junior at Princeton University majoring in Computer Science. 

@@ -37,7 +37,7 @@ function Contact() {
         <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>contact me</title>
+                <title>CONTACT</title>
             </Helmet>
             <h1>Contact me below!</h1>
 
