@@ -29,7 +29,7 @@ function NavBar() {
                     <a href="https://github.com/belle-chang"
                             target="_blank"
                             className={navBarStyles.reg}
-                            style={{fontSize: `25px`, textAlign: `center`}}>
+                            style={{fontSize: `28px`, textAlign: `center`}}>
                                 <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     <span className={navBarStyles.tooltiptext}>
@@ -42,7 +42,7 @@ function NavBar() {
                     <a href="https://www.linkedin.com/in/anabelle-chang-620362102"
                         target="_blank"
                         className={navBarStyles.reg}
-                        style={{fontSize: `25px`}}>
+                        style={{fontSize: `28px`}}>
                             <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
                     <span className={navBarStyles.tooltiptext}>
