@@ -11,16 +11,18 @@ function IndexPage( { data } ) {
     // console.log(data.allMarkdownRemark)
     // console.log(Object.keys(data.allMarkdownRemark.edges).length);
     let length = Object.keys(data.allMarkdownRemark.edges).length
-    if (length % 2 == 1) length = length + 1
+    if (length % 2 === 1) length = length + 1
     let col1 = data.allMarkdownRemark.edges.filter(({ node }) =>  {
         if (node.frontmatter.key <= length/2) {
             return node
         }
+        return null
     })
     let col2 = data.allMarkdownRemark.edges.filter(({ node }) =>  {
         if (node.frontmatter.key > length/2) {
             return node
         }
+        return null
     })
 
     return (
@@ -48,7 +50,7 @@ function IndexPage( { data } ) {
                         (
                             <Link to={`/projects/${node.fields.slug}`}>
                             <div className="container">
-                                    <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+                                    <img className="image" src={node.frontmatter.imgname + ".jpg"} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
 
                                 <div className="overlay">
                                     <div className="text">
@@ -66,7 +68,7 @@ function IndexPage( { data } ) {
                             <Link to={`/projects/${node.fields.slug}`}>
 
                             <div className="container">
-                                    <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+                                    <img className="image" src={node.frontmatter.imgname + ".jpg"} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
 
                                 <div className="overlay">
                                     <div className="text">
@@ -89,7 +91,7 @@ function IndexPage( { data } ) {
                         <Link to={`/projects/${node.fields.slug}`}>
 
                         <div className="container">
-                                <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+                                {/* <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/> */}
 
                             <div className="overlay">
                                 <div className="text">

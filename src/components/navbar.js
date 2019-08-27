@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faGithub,
-    faInstagram,
+    // faInstagram,
     faLinkedin,
-    faMediumM,
-    faTwitter,
-    faYoutube
+    // faMediumM,
+    // faTwitter,
+    // faYoutube
   } from '@fortawesome/free-brands-svg-icons'
 import navBarStyles from "./navbar.module.scss"
 

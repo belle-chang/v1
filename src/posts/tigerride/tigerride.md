@@ -2,7 +2,7 @@
 title: "TigerRide"
 date: "March 2019-present"
 # imgname: "tigerride.jpg"
-imgname: "tigerride.jpg"
+imgname: "tigerride"
 tile: "TigerRide"
 description: "A student run web-app created to allow students to organize for transportation to and from airports."
 key: "1"
