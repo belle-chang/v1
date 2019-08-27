@@ -10,7 +10,7 @@ query ($slug: String!) {
       frontmatter {
         title
         date
-        image
+        imgname
         tile
         description
         key

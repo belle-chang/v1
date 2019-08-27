@@ -48,7 +48,7 @@ function IndexPage( { data } ) {
                         (
                             <Link to={`/projects/${node.fields.slug}`}>
                             <div className="container">
-                                    <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+                                    <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
 
                                 <div className="overlay">
                                     <div className="text">
@@ -66,7 +66,7 @@ function IndexPage( { data } ) {
                             <Link to={`/projects/${node.fields.slug}`}>
 
                             <div className="container">
-                                    <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+                                    <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
 
                                 <div className="overlay">
                                     <div className="text">
@@ -89,7 +89,7 @@ function IndexPage( { data } ) {
                         <Link to={`/projects/${node.fields.slug}`}>
 
                         <div className="container">
-                                <img className="image" src={node.frontmatter.image} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
+                                <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
 
                             <div className="overlay">
                                 <div className="text">
@@ -163,7 +163,7 @@ export const query = graphql`
                     frontmatter {
                         title
                         date
-                        image
+                        imgname
                         tile
                         description
                         key
