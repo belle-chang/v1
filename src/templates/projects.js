@@ -51,6 +51,9 @@ function Projects(props) {
             <div dangerouslySetInnerHTML={{
                 __html: new_str
             }}></div>
+            <br />
+            <br />
+            <br />
         </Layout>
     )
 }
