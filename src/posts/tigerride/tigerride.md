@@ -10,7 +10,7 @@ key: "1"
 
 __**Technical Skills/Technologies Used:**__ Django, Python, PostGres, Heroku
 
-During the course COS333: Advanced Programming Techniques, I, along with a few others, created a web application that would allow for students to organize sharing Uber, Lyft, or other transportation services to and from the Princeton University campus. I was mostly in charge of the back-end development, but I also dabbled a bit in databases using PostGres.
+During the course COS333: Advanced Programming Techniques, I, along with a few others, created a web application that would allow for students to organize sharing Uber, Lyft, or other transportation services to and from the Princeton University campus. I was mostly in charge of the back-end development and I worked a bit with databases using PostGres.
 
 ![home_gif](../tigerride/home.gif)
 
