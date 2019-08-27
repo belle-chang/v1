@@ -10,9 +10,10 @@ key: "1"
 
 __**Technical Skills/Technologies Used:**__ Django, Python, PostGres, Heroku
 
-In Spring 2019, I took a class COS333: Advanced Programming Techniques, during which I, along with a few others, created a web application that would allow for students to organize sharing Uber, Lyft, or other transportation services to and from the Princeton University campus. I was mostly in charge of the back-end development, but I also dabbled a bit in databases using PostGres.
+During the course COS333: Advanced Programming Techniques, I, along with a few others, created a web application that would allow for students to organize sharing Uber, Lyft, or other transportation services to and from the Princeton University campus. I was mostly in charge of the back-end development, but I also dabbled a bit in databases using PostGres.
 
 ![home_gif](../tigerride/home.gif)
+
 
 Each student who wanted to use our app to search for other students would first fill out a form which would save their origin, destination, date, time interval during which they could take an Uber/Lyft, and other miscellaneous but pertinent information:
 
@@ -48,7 +49,6 @@ The app connects students who were traveling on the same date to and from the sa
 This was the first time I was able to develop an idea from start to finish, and it was definitely a very rewarding experience during which I learned many new technologies, how to troubleshoot problems/bugs, and the benefits of being more open to asking for help. It's safe to say that TigerRide was not made without any major roadblocks -- during the early stages of our development, we were unable to transfer from SQLite3 to a PostGres database, a problem that we were only able to fix with a major sacrifice in terms of our efficiency. While it was easy to get frustrated, I think this process just taught me to be more tenacious and to always follow things to completion. I'm so grateful for my team, adviser and professor in all their help during the process, and I can't wait to continue to explore CS creatively! :)
 
 You can visit it [here](http://tigerride.herokuapp.com).  
-
 
 
 
