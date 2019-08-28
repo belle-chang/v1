@@ -22,7 +22,7 @@ function About() {
             <p>
                 {/* My passions include experimenting with new recipes, perusing <a className="link" href="https://www.theverge.com/this-is-my-next/2018/10/5/17927798/best-music-streaming-service-price-comparison-features">Spotify</a> for the latest new hits, and _____. */}
                 My primary interest is exploring how computer science can be intertwined with other fields, such as medicine or sports, to evolve or create innovative technologies. I would love to work in software development/engineering or project management. Other passions of mine include experimenting with new recipes, 
-                perusing Spotify the latest new hits, and hitting up my local hiking trails. 
+                perusing Spotify for the latest new hits, and hitting up my local hiking trails. 
                 {/* <a className="link" href="https://www.theverge.com/this-is-my-next/2018/10/5/17927798/best-music-streaming-service-price-comparison-features">
                     Spotify
                     </a> 
