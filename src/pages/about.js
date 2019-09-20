@@ -40,7 +40,7 @@ function About() {
             
 
             <div style={{textDecoration: `underline`,fontWeight: `700`}}>Relevant Coursework:</div>
-            <p >General Computer Science, Algorithms and Data Structures, Introduction to Programming Systems, Reasoning About Computation, Advanced Programming Techniques, Economics and Computation</p>
+            <p >General Computer Science, Algorithms and Data Structures, Introduction to Programming Systems, Reasoning About Computation, Advanced Programming Techniques, Economics and Computation, Computer Vision (in progress), Contemporary Logic Design (in progress), Mobile/Wearable Design for Medical Technology (in progress)</p>
             {/* <ul>
                 <li>General Computer Science</li>
                 <li>Algorithms and Data Structures,</li>
