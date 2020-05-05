@@ -47,10 +47,11 @@ function IndexPage( { data } ) {
                 </div> 
             ))} */}
 
-            <div class="row"> 
-                    <div class="column">
+            <div className="row"> 
+                    <div className="column">
                         {col1.map(({ node }) => 
                         (
+                            // link to project template
                             <Link to={`/projects/${node.fields.slug}`}>
                             <div className="container">
                                     <img className="image" src={node.frontmatter.imgname + ".jpg"} alt={node.frontmatter.tile} key={node.frontmatter.key}/>
@@ -65,7 +66,7 @@ function IndexPage( { data } ) {
                             </Link>                
                         ))}
                     </div>
-                    <div class="column">
+                    <div className="column">
                         {col2.map(({ node }) => 
                         (
                             <Link to={`/projects/${node.fields.slug}`}>
@@ -86,8 +87,8 @@ function IndexPage( { data } ) {
                 </div>
             
             {length >= 6 &&
-                <div class="row"> 
-                    <div class="column">
+                <div className="row"> 
+                    <div className="column">
                         
                     {data.allMarkdownRemark.edges.map(({ node }) => 
                     (
@@ -113,7 +114,7 @@ function IndexPage( { data } ) {
                         <img src={`tigerride.jpg`} style={{width:`100%`}}/>
                         <img src={`tigerride.jpg`} style={{width:`100%`}}/> */}
                     </div>
-                    <div class="column">
+                    <div className="column">
                         <img src={`tigerride.jpg`} style={{width:`100%`}}/>
                         <img src={`test.jpg`}style={{width:`100%`}}/>
                         <img src={`test1.jpg`} style={{width:`100%`}}/>

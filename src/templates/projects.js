@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import '../styles/all.scss'
 import favicon from "../../static/favicon.ico"
 
-
+// query based on slug 
 export const query = graphql`
 query ($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
@@ -28,7 +28,6 @@ function Projects(props) {
     let new_str = str.replace("<a", "<a style={{color: `black`, text-decoration: `none`, border-bottom: `1px dotted black`,}} className='link'");
     // console.log(str)
     // console.log(new_str)
-
 
     return (
         <Layout>

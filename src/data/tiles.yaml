@@ -7,3 +7,6 @@
 - image: v1.jpg
   name: first iteration of my site!
   description: a static site created with the gatsby and react frameworks.
+- image: typetyperevenge.jpg
+  name: type type revenge
+  description: a dynamic typing-practice game modeled after the classic iPhone music game, Tap Tap Revenge.
