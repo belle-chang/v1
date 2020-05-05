@@ -86,44 +86,45 @@ function IndexPage( { data } ) {
                     </div>
                 </div>
             
-            {length >= 6 &&
-                <div className="row"> 
-                    <div className="column">
+            {
+            // length >= 6 &&
+            //     <div className="row"> 
+            //         <div className="column">
                         
-                    {data.allMarkdownRemark.edges.map(({ node }) => 
-                    (
-                        <Link to={`/projects/${node.fields.slug}`}>
+            //         {data.allMarkdownRemark.edges.map(({ node }) => 
+            //         (
+            //             <Link to={`/projects/${node.fields.slug}`}>
 
-                        <div className="container">
-                                {/* <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/> */}
+            //             <div className="container">
+            //                     {/* <img className="image" src={node.frontmatter.imgname} alt={node.frontmatter.tile} key={node.frontmatter.key}/> */}
 
-                            <div className="overlay">
-                                <div className="text">
-                                <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
-                                {node.frontmatter.description}
-                                </div>
-                            </div>
-                        </div>
-                        </Link>                
-                    ))}
-                        {/* <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                        <img src={`test.jpg`}style={{width:`100%`}}/>
-                        <img src={`test1.jpg`} style={{width:`100%`}}/>
-                        <img src={`surfrider.jpg`} style={{width:`100%`}}/>
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/> */}
-                    </div>
-                    <div className="column">
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                        <img src={`test.jpg`}style={{width:`100%`}}/>
-                        <img src={`test1.jpg`} style={{width:`100%`}}/>
-                        <img src={`surfrider.jpg`} style={{width:`100%`}}/>
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                        <img src={`tigerride.jpg`} style={{width:`100%`}}/>
-                    </div>
-                </div>
+            //                 <div className="overlay">
+            //                     <div className="text">
+            //                     <div style={{fontSize: `25px`, fontWeight: `bold`}}>{node.frontmatter.tile}</div>
+            //                     {node.frontmatter.description}
+            //                     </div>
+            //                 </div>
+            //             </div>
+            //             </Link>                
+            //         ))}
+            //             {/* <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //             <img src={`test.jpg`}style={{width:`100%`}}/>
+            //             <img src={`test1.jpg`} style={{width:`100%`}}/>
+            //             <img src={`surfrider.jpg`} style={{width:`100%`}}/>
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/> */}
+            //         </div>
+            //         <div className="column">
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //             <img src={`test.jpg`}style={{width:`100%`}}/>
+            //             <img src={`test1.jpg`} style={{width:`100%`}}/>
+            //             <img src={`surfrider.jpg`} style={{width:`100%`}}/>
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //             <img src={`tigerride.jpg`} style={{width:`100%`}}/>
+            //         </div>
+            //     </div>
             }
             
             {/* {data.allMarkdownRemark.edges.map(({ node }) => 

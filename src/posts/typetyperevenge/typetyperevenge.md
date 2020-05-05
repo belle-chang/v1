@@ -37,4 +37,3 @@ I also decided that I wanted an effect for when the player missed typing the let
 Once the game's components were relatively complete, we decided to create scoring components of the game. So, I created a preliminary ScoreKeeper Class that would update the score if the player typed the right letter, and reset it if he/she didn't.
 
 Of course, this is a work in progress, and there are still many more features that I am planning to implement, but it has been an amazing and greatly enjoyable process throughout. This is the first time I have created a game, and I can see it being a career path I would definitely want to take! :)
-
